@@ -1,0 +1,716 @@
+
+<!-- saved from url=(0072)http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Required meta tagss for new branch -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Página principal - FJRA_files/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link href="./Página principal - FJRA_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Página principal - FJRA_files/landing.css">
+  <link rel="stylesheet" href="./Página principal - FJRA_files/responsive.css">
+  <link rel="shortcut icon" href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/images/favicon.ico" type="image/x-icon">
+  <title>Página principal - FJRA</title>
+  <script src="./Página principal - FJRA_files/jquery.min.js.descarga"></script>
+</head>
+
+<body>
+
+  <div style="position: relative;">
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right" style="background: rgb(12, 12, 12);">
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <div class="left d-flex align-items-center">
+            <a class="navbar-brand" href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php">
+              <img src="./Página principal - FJRA_files/logo.png" alt="">
+            </a>
+            <div class="netflix-nav">
+              <section>
+                <button><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php">Home</a></button>
+                <button><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/peliculas.php">Peliculas</a></button>
+                <button><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/series.php">Series</a></button>
+              </section>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center">
+            <i class="bi bi-search"></i>
+            <div class="netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bell-fill"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li class="dropdown-item">No hay notificaciones</li>
+              </ul>
+            </div>
+            <section class="netflix-profile">
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /header -->
+
+
+    <!-- video -->
+    <div class="">
+      <section class="netflix-home-video">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <video src="./video/chicken_video.mp4" autoplay="" muted="" loop=""></video>
+        <div class="content">
+          <section class="left">
+            <img src="./Página principal - FJRA_files/chicken_run_logo.webp" alt="">
+
+            <div class="d-flex mt-2">
+              <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i>
+                  Reproducir </button></a>
+              <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style=" padding: 0%;"></i>
+                Info</button>
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+    </div>
+    <!-- video -->
+
+    <!-- sliders -->
+    <div class="slider-box">
+      <div class="container-fluid slider">
+        <section class="d-flex justify-content-between margin-right">
+          <p class="text-white"> <b>Películas</b> </p>
+        </section>
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-bs-ride="carousel">
+          <div class="carousel-inner" style="position: relative; overflow: visible;">
+            <div class="carousel-item active slick-track">
+              <section class="d-flex" style="">
+                
+                  <div class="card">
+                    <img src="./Página principal - FJRA_files/miniatura_chicken_run.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-1"></button>
+                            <dialog id="info-1" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-1"></button>
+                                    <img src="./Página principal - FJRA_files/miniatura_chicken_run.webp" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">Chicken run</h1>
+                                        <div class="d-flex mt-2">
+                                        <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i>
+                                            Reproducir </button></a>
+                                        </div>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 2000 95 min</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">Atrapadas tras una alambrada y temiendo por sus vidas, Ginger, Bunty y Babs son unas gallinas valientes y decididas a conseguir la libertad antes de terminar en una cazuela. Están presas en la Granja de los Tweedy, donde la vida pende de un hilo.</p>
+                                    <p><b>Reparto: </b> Julia Sawalha, Mel Gibson, Lynn Ferguson, Jane Horrocks, Tony Haygarth, Benjamin Whitrow, Imelda Staunton, Miranda Richardson, Phil Daniels , etc.</p>
+                                </div>
+                            </div>
+                            </dialog>
+                        </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">Chicken run</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white">Infantil • Animación </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                  </div>
+                <script>
+                    const btnAbrirInfo_1 = document.querySelector("#btn-abrir-info-1");
+                    const btnCerrarInfo_1 = document.querySelector("#btn-cerrar-info-1");
+                    const info_1 = document.querySelector("#info-1");
+          
+                    btnAbrirInfo_1.addEventListener("click", () => {
+                        info_1.showModal();
+                    })
+          
+                    btnCerrarInfo_1.addEventListener("click", () => {
+                        info_1.close();
+                    })
+                </script>
+                  <div class="card">
+                    <img src="./Página principal - FJRA_files/holdovers.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=2"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-2"></button>
+                            <dialog id="info-2" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-2"></button>
+                                    <img src="./Página principal - FJRA_files/holdovers.jpg" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">Los que se quedan</h1>
+                                        <div class="d-flex mt-2">
+                                        <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i>
+                                            Reproducir </button></a>
+                                        </div>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 2023 133 min</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">Obligado a pasar las vacaciones de Navidad con un puñado de estudiantes, un antipático profesor de un internado de Nueva Inglaterra desarrolla un vínculo poco probable con un astuto alborotador y la jefa de cocina.</p>
+                                    <p><b>Reparto: </b> Naheem Garcia, Jim Kaplan, Alexander Cook, Michael Provost , etc.</p>
+                                </div>
+                            </div>
+                            </dialog>
+                        </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">Los que se quedan</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white">Drama • Comedia </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                  </div>
+                <script>
+                    const btnAbrirInfo_2 = document.querySelector("#btn-abrir-info-2");
+                    const btnCerrarInfo_2 = document.querySelector("#btn-cerrar-info-2");
+                    const info_2 = document.querySelector("#info-2");
+          
+                    btnAbrirInfo_2.addEventListener("click", () => {
+                        info_2.showModal();
+                    })
+          
+                    btnCerrarInfo_2.addEventListener("click", () => {
+                        info_2.close();
+                    })
+                </script>
+                  <div class="card">
+                    <img src="./Página principal - FJRA_files/openhimier.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=3"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-3"></button>
+                            <dialog id="info-3" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-3"></button>
+                                    <img src="./Página principal - FJRA_files/openhimier.jpg" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">Oppenheimer</h1>
+                                        <div class="d-flex mt-2">
+                                        <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i>
+                                            Reproducir </button></a>
+                                        </div>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 2023 180 min</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">Durante la Segunda Guerra Mundial, el teniente general Leslie Groves designa al físico J. Robert Oppenheimer para un grupo de trabajo que está desarrollando el Proyecto Manhattan, cuyo objetivo consiste en fabricar la primera bomba atómica.
+</p>
+                                    <p><b>Reparto: </b> Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr. , etc.</p>
+                                </div>
+                            </div>
+                            </dialog>
+                        </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">Oppenheimer</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white">Suspense • Acción </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                  </div>
+                <script>
+                    const btnAbrirInfo_3 = document.querySelector("#btn-abrir-info-3");
+                    const btnCerrarInfo_3 = document.querySelector("#btn-cerrar-info-3");
+                    const info_3 = document.querySelector("#info-3");
+          
+                    btnAbrirInfo_3.addEventListener("click", () => {
+                        info_3.showModal();
+                    })
+          
+                    btnCerrarInfo_3.addEventListener("click", () => {
+                        info_3.close();
+                    })
+                </script>
+                  <div class="card">
+                    <img src="./Página principal - FJRA_files/sociedad_nieve.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=4"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-4"></button>
+                            <dialog id="info-4" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-4"></button>
+                                    <img src="./Página principal - FJRA_files/sociedad_nieve.jpg" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">La sociedad de la nieve</h1>
+                                        <div class="d-flex mt-2">
+                                        <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i>
+                                            Reproducir </button></a>
+                                        </div>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 2023 144 min</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">En 1972, un vuelo procedente de Uruguay se estrella en un glaciar en los Andes. Solo 29 de sus 45 pasajeros sobreviven al accidente. Atrapados en uno de los entornos más hostiles del planeta, se ven obligados a luchar por sus vidas.</p>
+                                    <p><b>Reparto: </b> Agustín Pardella, Matías Recalt, Tomas Wolf, Esteban Kukuriczka , etc.</p>
+                                </div>
+                            </div>
+                            </dialog>
+                        </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">La sociedad de la nieve</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white">Suspense • Drama </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                  </div>
+                <script>
+                    const btnAbrirInfo_4 = document.querySelector("#btn-abrir-info-4");
+                    const btnCerrarInfo_4 = document.querySelector("#btn-cerrar-info-4");
+                    const info_4 = document.querySelector("#info-4");
+          
+                    btnAbrirInfo_4.addEventListener("click", () => {
+                        info_4.showModal();
+                    })
+          
+                    btnCerrarInfo_4.addEventListener("click", () => {
+                        info_4.close();
+                    })
+                </script>
+                  <div class="card">
+                    <img src="./Página principal - FJRA_files/hollywood.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=5"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-5"></button>
+                            <dialog id="info-5" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-5"></button>
+                                    <img src="./Página principal - FJRA_files/hollywood.jpg" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">Una vez en hollywood</h1>
+                                        <div class="d-flex mt-2">
+                                        <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i>
+                                            Reproducir </button></a>
+                                        </div>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 2019 160 min</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">Hollywood, años 60. La estrella de un western televisivo, Rick Dalton, intenta amoldarse a los cambios del medio al mismo tiempo que su doble. La vida de Dalton está ligada completamente a Hollywood, y es vecino de la joven y prometedora actriz y modelo Sharon Tate que acaba de casarse con el prestigioso director Roman Polanski.</p>
+                                    <p><b>Reparto: </b> Leonardo DiCaprio, Brad Pitt, Margot Robbie, Emile Hirsch , etc.</p>
+                                </div>
+                            </div>
+                            </dialog>
+                        </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">Una vez en hollywood</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white">Comedia • Wéstern </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                  </div>
+                <script>
+                    const btnAbrirInfo_5 = document.querySelector("#btn-abrir-info-5");
+                    const btnCerrarInfo_5 = document.querySelector("#btn-cerrar-info-5");
+                    const info_5 = document.querySelector("#info-5");
+          
+                    btnAbrirInfo_5.addEventListener("click", () => {
+                        info_5.showModal();
+                    })
+          
+                    btnCerrarInfo_5.addEventListener("click", () => {
+                        info_5.close();
+                    })
+                </script>
+                  <div class="card">
+                    <img src="./Página principal - FJRA_files/padrino.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=6"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-6"></button>
+                            <dialog id="info-6" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-6"></button>
+                                    <img src="./Página principal - FJRA_files/padrino.jpg" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">El padrino</h1>
+                                        <div class="d-flex mt-2">
+                                        <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor.php?pelicula_id=1"><button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i>
+                                            Reproducir </button></a>
+                                        </div>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 1972 175 min</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael, que no quiere saber nada de los negocios sucios de su padre.</p>
+                                    <p><b>Reparto: </b> Al Pacino, Marlon Brando, James Caan, Diane Keaton , etc.</p>
+                                </div>
+                            </div>
+                            </dialog>
+                        </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">El padrino</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white">Crimen • Misterio </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                  </div>
+                <script>
+                    const btnAbrirInfo_6 = document.querySelector("#btn-abrir-info-6");
+                    const btnCerrarInfo_6 = document.querySelector("#btn-cerrar-info-6");
+                    const info_6 = document.querySelector("#info-6");
+          
+                    btnAbrirInfo_6.addEventListener("click", () => {
+                        info_6.showModal();
+                    })
+          
+                    btnCerrarInfo_6.addEventListener("click", () => {
+                        info_6.close();
+                    })
+                </script>              </section>
+            </div>
+          </div>
+        </div>
+        <br>
+        <section class="d-flex justify-content-between margin-right">
+          <p class="text-white"> <b>Series</b> </p>
+        </section>
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-bs-ride="carousel">
+          <div class="carousel-inner" style="position: relative; overflow: visible;">
+            <div class="carousel-item active slick-track">
+              <section class="d-flex" style="">
+                
+                <div class="card">
+                    <img src="./Página principal - FJRA_files/aqui_no_hay_quien_viva.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?serie_id=1"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-1"></button>
+                            <dialog id="info-1" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-1"></button>
+                                    <img src="./Página principal - FJRA_files/aqui_no_hay_quien_viva.webp" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">Aquí no hay quien viva</h1>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 2003 - 2009</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">Se narra la vida de una peculiar comunidad de vecinos de la ficticia calle Desengaño 21; en un edificio decimonónico localizado en el centro de Madrid compuesta por un bloque de tres pisos, con un total de seis viviendas, una portería, un ático utilizado como trastero y un local contiguo.</p>
+                                    <p><b>Reparto: </b> Malena Alterio, Fernando Tejero, José Luis Gil, Gemma Cuervo , etc.</p>
+                                </div><div class="col d-flex align-items-center"><h1>Episodios: </h1><div class="duracion"><select id="selector-temporadas-1"><option value="1">Temporada 1</option><option value="2">Temporada 2</option></select></div>
+                            
+                                </div><div id="episodios-container-1"><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=6"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/episodio_1.jpg" class"w-100"=""></div><div class="col"><h3>Érase una mudanza</h3> <p>Los vecinos se ponen por fin de acuerdo en algo, pero ¿hasta cuándo? Fernando recibe una oferta y Mauri debe tomar una decisión. Belén también se decide por fin.</p></div></div><hr></div></div></dialog>
+                        
+                            </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">Aquí no hay quien viva</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white">Comedia </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                </div>
+                <script>
+                    const btnAbrirInfo_1 = document.querySelector("#btn-abrir-info-1");
+                    const btnCerrarInfo_1 = document.querySelector("#btn-cerrar-info-1");
+                    const info_1 = document.querySelector("#info-1");
+        
+                    btnAbrirInfo_1.addEventListener("click", () => {
+                        info_1.showModal();
+                    })
+        
+                    btnCerrarInfo_1.addEventListener("click", () => {
+                        info_1.close();
+                    })
+                </script>
+                <script>
+                    $(document).ready(function() {
+                        // Seleccionar el primer elemento del selector de temporadas
+                        var primerTemporada = $("#selector-temporadas-1 option:first").val();
+                        
+                        // Cargar automáticamente los episodios de la primera temporada
+                        cargarEpisodios(primerTemporada);
+                    
+                        // Función para cargar los episodios de una temporada específica
+                        function cargarEpisodios(idTemporada) {
+                            $.ajax({
+                                type: "POST",
+                                url: "obtener_episodios.php", // Archivo PHP para obtener los episodios
+                                data: { idtemporada: idTemporada },
+                                success: function(response) {
+                                    $("#episodios-container-1").html(response);
+                                }
+                            });
+                        }
+                    
+                        // Manejar el cambio en el selector de temporadas
+                        $("#selector-temporadas-1").change(function() {
+                            var idTemporada = $(this).val();
+                            cargarEpisodios(idTemporada);
+                        });
+                    });                
+                </script>
+                <div class="card">
+                    <img src="./Página principal - FJRA_files/miniatura.jpg" class="card-img-top" alt="..." width="200px">
+                    <div class="card-body">
+                        <section class="d-flex justify-content-between">
+                        <div>
+                            <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?serie_id=2"><i class="bi bi-play-circle-fill card-icon"></i></a>
+                            <button class="bi bi-info-circle card-icon" style="color: black;" id="btn-abrir-info-2"></button>
+                            <dialog id="info-2" class="info">
+                            <div class="">
+                                <section class="netflix-home-video">
+                                    <button class="bi bi-x-circle-fill card-icon btn-cerrar-info" id="btn-cerrar-info-2"></button>
+                                    <img src="./Página principal - FJRA_files/miniatura.jpg" style="width: 100%;">
+                                    <div class="bottom"></div>
+                                    <div class="content">
+                                    <section class="left">
+                                        <h1 style="margin-top: 80%;" class="info-titulo">Machos Alfa</h1>
+                                    </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="info-contenido m-5 row">
+                                <div class="col d-flex align-items-center">
+                                    <h1>Sinopsis</h1>
+                                    <div class="duracion">Año 2023</div>
+                                </div>
+                                <div>
+                                    <p style="text-align: justify;">Pedro se queda en el paro. La hija de Santi se va a vivir con él. La mujer de Luis no está contenta con su vida sexual. La declaración de Raúl no sale como esperaba.</p>
+                                    <p><b>Reparto: </b>  , etc.</p>
+                                </div><div class="col d-flex align-items-center"><h1>Episodios: </h1><div class="duracion"><select id="selector-temporadas-2"><option value="3">Temporada 1</option><option value="4">Temporada 2</option></select></div>
+                            
+                                </div><div id="episodios-container-2"><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=8"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura.png" class"w-100"=""></div><div class="col"><h3>En desconstrucción</h3> <p>Pedro se queda en el paro. La hija de Santi se va a vivir con él. La mujer de Luis no está contenta con su vida sexual. La declaración de Raúl no sale como esperaba.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=9"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(1).png" class"w-100"=""></div><div class="col"><h3>Lo que te absorbe es la vida</h3> <p>A Pedro no se le da bien estar en el paro. Luis y Esther hablan con una terapeuta sexual. Raúl descubre algo de sus padres y Santi algo sobre Álex.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=10"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(2).png" class"w-100"=""></div><div class="col"><h3>Masculinidad tóxica</h3> <p>Raúl se va a vivir con Santi, que no tiene mucho éxito en el amor. La carrera de Daniela va bien, para disgusto de Pedro. Esther decide medicarse.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=16"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(3).png" class"w-100"=""></div><div class="col"><h3>Hierbas ibicencas</h3> <p>Los chicos se van a Ibiza y Santi intenta que reflexionen sobre su forma de hablar. Pedro tiene un problema... o dos. Esther está enganchada al gimnasio.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=17"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(4).png" class"w-100"=""></div><div class="col"><h3>Heteroflexibles sensibles</h3> <p>Raúl intenta adaptarse a su nueva situación. Pedro intenta cobrar el paro y comete un error garrafal. Luis y Santi buscan un amigo gay.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=18"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(5).png" class"w-100"=""></div><div class="col"><h3>La que has liado</h3> <p>Los chicos van a un seminario sobre masculinidad tóxica. A Santi le va bien con las mujeres, no como a Raúl. Daniela le ofrece trabajo a Pedro. Luis descubre algo.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=19"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(6).png" class"w-100"=""></div><div class="col"><h3>¿Cuándo lloraste por última vez?</h3> <p>Luz tiene una idea. Pedro y Daniela no están satisfechos con su acuerdo laboral. Luis y Esther intentan negociar. Santi quiere comprometerse... ¿o no?</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=20"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(7).png" class"w-100"=""></div><div class="col"><h3>Con lo bien que estábamos</h3> <p>Pedro se convierte en un influencer un tanto especial. Raúl y Daniela creen que Luz y Pedro están liados. Santi no se decide.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=21"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(8).png" class"w-100"=""></div><div class="col"><h3>El Moisés de los machirulos</h3> <p>Los vídeos de Pedro se hacen virales y ponen en peligro la carrera de Daniela. Eugenia le da una sorpresa desagradable a Santi. Luz y Raúl dan un gran paso.</p></div></div><hr><div class="episodio row"> <div class="col-4 position-relative"><a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/reproductor_series.php?episodio_id=22"><i class="bi bi-play-circle-fill card-icon position-absolute top-50 start-50 translate-middle"></i></a><img src="./Página principal - FJRA_files/miniatura(9).png" class"w-100"=""></div><div class="col"><h3>O falla el temario o fallamos nosotros</h3> <p>Raúl comete un grave error y Daniela toma una decisión drástica. Santi sorprende a Álex, pero no en el buen sentido. Luis y Esther montan una fiesta de cumpleaños.</p></div></div><hr></div></div></dialog>
+                        
+                            </div>
+                        <div>
+                          <a href="http://localhost/PHP_1_EV_Francisco_Javier_Ruiz_Aviles/netflix/index.php" download=""><i class="bi bi-arrow-down-circle card-icon"></i></a>
+                        </div>
+                      </section>
+                      <h1 style="color: white; font-size: 1.75rem;">Machos Alfa</h1>
+                      <section class="d-flex align-items-center justify-content-between">
+                        <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% de coincidencia</p>
+                        <span class="m-2 netflix-card-text text-white"> </span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                      </section>
+                    </div>
+                </div>
+                <script>
+                    const btnAbrirInfo_2 = document.querySelector("#btn-abrir-info-2");
+                    const btnCerrarInfo_2 = document.querySelector("#btn-cerrar-info-2");
+                    const info_2 = document.querySelector("#info-2");
+        
+                    btnAbrirInfo_2.addEventListener("click", () => {
+                        info_2.showModal();
+                    })
+        
+                    btnCerrarInfo_2.addEventListener("click", () => {
+                        info_2.close();
+                    })
+                </script>
+                <script>
+                    $(document).ready(function() {
+                        // Seleccionar el primer elemento del selector de temporadas
+                        var primerTemporada = $("#selector-temporadas-2 option:first").val();
+                        
+                        // Cargar automáticamente los episodios de la primera temporada
+                        cargarEpisodios(primerTemporada);
+                    
+                        // Función para cargar los episodios de una temporada específica
+                        function cargarEpisodios(idTemporada) {
+                            $.ajax({
+                                type: "POST",
+                                url: "obtener_episodios.php", // Archivo PHP para obtener los episodios
+                                data: { idtemporada: idTemporada },
+                                success: function(response) {
+                                    $("#episodios-container-2").html(response);
+                                }
+                            });
+                        }
+                    
+                        // Manejar el cambio en el selector de temporadas
+                        $("#selector-temporadas-2").change(function() {
+                            var idTemporada = $(this).val();
+                            cargarEpisodios(idTemporada);
+                        });
+                    });                
+                </script>              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sliders-end -->
+
+
+  <!-- footer  -->
+  <div class="container footer">
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-md-3">
+            <ul>
+              <li>Audio and Subtitle</li>
+              <li>Media Center</li>
+              <li>Privacy</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Audio description</li>
+              <li>Investor Relation</li>
+              <li>Terms and Conditions</li>
+              <li>Legal Notices</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Help Center</li>
+              <li>Jobs</li>
+
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Gift card</li>
+              <li>Subscription</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 mx-auto">
+        <div class="row">
+
+          <div class="col">
+            <p class="copy-right">@netflix copyright</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="./Página principal - FJRA_files/bootstrap.bundle.min.js.descarga" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="./Página principal - FJRA_files/javaScript.js.descarga"></script>
+
+  <script>
+    const btnAbrirInfo = document.querySelector("#btn-abrir-info");
+    const btnCerrarInfo = document.querySelector("#btn-cerrar-info");
+    const info = document.querySelector("#info");
+
+    btnAbrirInfo.addEventListener("click", () => {
+      info.showModal();
+    })
+
+    btnCerrarInfo.addEventListener("click", () => {
+      info.close();
+    })
+  </script>
+
+
+
+
+
+</body></html>
